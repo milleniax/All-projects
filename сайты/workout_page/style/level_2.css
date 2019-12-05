@@ -1,0 +1,75 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+a{
+	text-decoration: none;
+	width: 50%;
+	height: 50vh;
+
+}
+div{
+	display: table;
+	width:100%;
+	height:100%;
+}
+
+a div{
+	background-image: none;
+}
+a .angle:hover{
+	background-image: url(../img/angle.gif);
+}
+a .crocodile:hover{
+	background-image: url(../img/crocodile.gif);
+}
+a .roll:hover{
+	background-image: url(../img/roll.gif);
+}
+a .smack:hover{
+	background-image: url(../img/smack.gif);
+}
+
+
+a .dragonflag:hover{
+	background-image: url(../img/dragonflag.gif);
+}
+a .backlever:hover{
+	background-image: url(../img/backlever.gif);
+}
+a .muscle_up:hover{
+	background-image: url(../img/muscle_up.gif);
+}
+a .handstand_pushup:hover{
+	background-image: url(../img/handstand_pushup.gif);
+}
+
+a .frontlever:hover{
+	background-image: url(../img/frontlever.gif);
+}
+a .plunche:hover{
+	background-image: url(../img/plunche.gif);
+}
+a .onehand_pullup:hover{
+	background-image: url(../img/onehand_pullup.gif);
+}
+a .flag:hover{
+	background-image: url(../img/flag.gif);
+}
+a div span:hover{
+	opacity: 0;
+}
+
+span{
+	display: table-cell;
+	color: #000;
+	font-family: 'Roboto', sans-serif;
+	font-size: 40px;
+	text-align: center;
+  	vertical-align: middle;
+}

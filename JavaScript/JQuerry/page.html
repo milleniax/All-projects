@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+        <style>
+                .circle{
+                    width:200px;height: 200px;border-radius: 50%;background-color: aqua;
+                }
+                .triangle{
+                    width: 0; 
+                    height: 0;
+                    border-left: 50px solid transparent;
+                    border-right: 50px solid transparent;
+                    border-bottom: 100px solid #24375B;
+                }
+                .pink{
+                    color: pink;
+                }
+                .yellow{
+                    color:yellow;
+                }
+                .violet{
+                    color:blueviolet;
+                }
+                *{margin: 0%;padding: 0%;}
+                @media (max-width: 500px){
+                    .content{
+                        flex-direction: column;
+                        align-items: center;
+                    }
+                    .content div{
+                        width: 100%;
+                    }
+                }
+                </style>
+    <h1 class = "pink">Main page</h1>
+    <div class="content" style="display: flex;justify-content: space-between;">
+        <div class="left" style="width: 50%;" data-color = 'green'><h2 style="text-align: center;">Content 1</h2></div>
+        <div style="width:50%"><h2 style="text-align: center;">Content 2</h2></div>
+    </div>
+    <button style="width: 10px;margin-left: auto;margin-right: 0;display: block;"></button>
+    
+        <form action="" style="width: fit-content;margin: 50px auto;">
+            <input type="submit">
+            <br>
+            <input type="text">
+        </form>
+        <form action="" style="display: flex;justify-content: center;flex-direction: column;align-items: center;">
+            <input type="submit">
+            <input type="text" name = "name">
+            <input type="radio" id="string" value = "string">
+            <label for="string">phone</label>
+
+        </form>
+        <div class="circle"></div>
+    <script src="js.js"></script>
+</body>
+</html>

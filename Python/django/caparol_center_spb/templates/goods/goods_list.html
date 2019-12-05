@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+  
+{% load static %}
+
+{% block title %}
+    Ассортимент
+{% endblock title %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            {% for good in all_goods %}
+              <div>
+                <img class="good" src="{{ good.img.url }}" alt="ddfd" width="100px" height="100px">
+                <h3> {{ good.title }} </h3><br>
+                <p> {{ good.description }} </p>
+              </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock content %}
+    

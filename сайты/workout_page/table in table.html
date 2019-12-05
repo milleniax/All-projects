@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Таблица в таблице</title>
+</head>
+<body>
+	<style>
+		td{
+			margin: 0;
+			padding: 0;
+		}
+		th{
+			padding-top: 2vh;
+			padding-bottom: 2vh;
+		}
+		.table_in{
+			
+			height: 70vh;
+			text-align: center;
+			border-radius: 5px;
+		}
+		
+		.table_in{
+			padding-left: 3vh;
+			padding-bottom: 3vh;
+			height: 70vh;
+			text-align: center;
+		}
+
+	</style>
+	<table style="text-align: center;border: 1px solid #000;border-radius: 5px;">
+		<tr>
+			<th>Тренировка 1</th>
+			<th>Тренировка 2</th>
+			<th>Тренировка 3</th>
+		</tr> <!--ряд с ячейками заголовков-->
+		<tr>
+			<td>
+				<table style="border: 1px solid #000" class = "table_in">
+					<tr>
+						<th>Упражнение</th>
+						<th>Количество повторений</th>
+						<th>Количество кругов</th>
+					</tr>
+					<tr><td>подтягивания узким хватом </td><td>8</td></tr>
+					<tr><td>подтягивания обычным хватом </td><td>8</td><td>3</td></tr>
+					<tr><td>подтягивания широким хватом </td><td>8</td></tr>
+					<tr><td>австралийские подтягивания узким хватом </td><td>8</td></tr>
+					<tr><td>австралийские подтягивания обычным хватом </td><td>8</td><td>3</td></tr>
+					<tr><td>австралийские широким хватом </td><td>8</td></tr>
+				</table>
+			</td>
+			<td>
+				<table style="border: 1px solid #000;" class = "table_in">
+					<tr>
+						<th>Упражнение</th>
+						<th>Количество повторений</th>
+						<th>Количество кругов</th>
+					</tr>
+					<tr><td>отжимания на турнике</td><td>10</td></tr>
+					<tr><td>алмазные отжимания</td><td>20</td></tr>
+					<tr><td>отжимания на брусьях</td><td>15</td></tr>
+					<tr><td>отжимания с наклоном вперед</td><td>15</td><td>4</td></tr>
+					<tr><td>корейские отжимания</td><td>10</td></tr>
+					<tr><td>отжимания с наклоном назад</td><td>35</td></tr>
+					<tr><td>упор на полу</td><td>35 сек</td></tr>
+ 
+
+				</table>
+			</td>
+			<td>
+					<table style="border: 1px solid #000" class = "table_in">
+						<tr>
+							<th>Упражнение</th>
+							<th>Количество повторений</th>
+							<th>Количество кругов</th>
+						</tr>
+						<tr><td>поднятие ровных ног(до турника)</td><td>10</td></tr>
+						<tr><td>скручивания</td><td>20</td></tr>
+						<tr><td>дворники</td><td>10</td></tr>
+						<tr><td>поднятие колен косым прессом(каждую сторону)</td><td>10</td><td>4</td></tr>
+						<tr><td>поднятие колен</td><td>10</td></tr>
+						<tr><td>скручивания</td><td>20</td></tr>
+						<tr><td>поднятие ног в уголок</td><td>10</td></tr>
+ 
+					</table>
+				</td>
+		</tr>
+	</table>
+</body>
+</html>
