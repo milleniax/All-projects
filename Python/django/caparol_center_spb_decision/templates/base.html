@@ -1,0 +1,78 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{% static 'css/reset.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <title> {% block title %}
+      
+    {% endblock title %} </title>
+</head>
+<body>
+    {% if messages %}
+    <ul class="messages">
+        {% for message in messages %}
+        <li{% if message.tags %} class="{{ message.tags }}" {% endif %}>{{ message }}</li>
+            {% endfor %}
+    </ul>
+    {% endif %}
+    <div class="container">
+        <header class="header">
+            <a href="{% url 'main:index' %}"><img src="{% static 'img/Logo.svg' %}" alt="" class="logo"></a>
+            <nav class="menu-main">
+                <ul class="menu menu_header">
+                    <li class="menu__item menu__item_header">
+                        <a href="{% url 'decision:livingrooms' %}" class="menu__link">Жилые интерьеры</a>
+                    </li>
+                    <li class="menu__item menu__item_header">
+                        <a href="" class="menu__link">Коммерческие интерьеры</a>
+                    </li>
+                    <li class="menu__item menu__item_header">
+                        <a href="" class="menu__link">Решения для фасада</a>
+                    </li>
+                    <li class="menu__item menu__item_header">
+                        <a href="" class="menu__link">Сервисы</a>
+                    </li>
+                    <li class="menu__item menu__item_header">
+                        <a href="" class="menu__link">Тренды</a>
+                    </li>
+                </ul>
+                <div class="dropdown">
+                    <span class="dropdown__line"></span>
+                    <span class="dropdown__line"></span>
+                    <span class="dropdown__line"></span>
+                </div>
+            </nav>
+        </header>
+    {% block content %}
+      
+    {% endblock content %}
+    <footer class="footer">
+        <ul class="menu menu_footer">
+            <li class="menu__item menu__item_footer">
+                <a href="" class="menu__link">Жилые интерьеры</a>
+            </li>
+            <li class="menu__item menu__item_footer">
+                <a href="" class="menu__link">Коммерческие интерьеры</a>
+            </li>
+            <li class="menu__item menu__item_footer">
+                <a href="" class="menu__link">Решения для фасада</a>
+            </li>
+            <li class="menu__item menu__item_footer">
+                <a href="" class="menu__link">Сервисы</a>
+            </li>
+            <li class="menu__item menu__item_footer">
+                <a href="" class="menu__link">Тренды</a>
+            </li>
+            <li class="menu__item menu__item_footer">
+                <a href="" class="menu__link">Контакты</a>
+            </li>
+        </ul>
+        <p class="company-info">© 2019 Caparol Center SPB</p>
+    </footer>
+</body>
+</html>

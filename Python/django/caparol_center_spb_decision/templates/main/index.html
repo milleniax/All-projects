@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% block title %}
+  Главная
+{% endblock title %}
+
+
+    
+{% block content %}
+</div>
+<div class="section-main">
+    <div class="wrapper wrapper-section-main">
+        <div class="main-top">
+            <h1>Caparol Center SPB</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas minus, reiciendis ipsum laborum ad id
+                earum fugit sunt sint magnam. Corrupti alias veritatis molestiae neque soluta, expedita magnam quisquam
+                asperiores.</p>
+        </div>
+    </div>
+
+    <main>
+        <a href="#" class="main-card main-card_first">
+            <p>Жилые интерьеры</p>
+            <h3>Жилые интерьеры</h2>
+        </a>
+        <a href="#" class="main-card main-card_second">
+            <p>Коммерческие Интерьеры</p>
+            <h3>Коммерческие Интерьеры</h2>
+        </a>
+        <a href="#" class="main-card main-card_third">
+            <p>Решение для Фасада</p>
+            <h3>Решение для Фасада</h2>
+        </a>
+        <a href="#" class="main-card main-card_fourth">
+            <p>Сервисы</p>
+            <h3>Сервисы</h2>
+        </a>
+    </main>
+
+    <div class="main-form">
+        <h2>Подписаться на новые предложения</h2>
+        <form action="" class="form" method="POST">
+            {% csrf_token %}
+            {{ form }}
+            <button type="submit" class="btn">Подписаться</button>
+        </form>
+    </div>
+    <div class="main-map">
+        <iframe
+            src="https://yandex.ru/map-widget/v1/?um=constructor%3A3a1d8625607f6df773281a3df4d10e638b7112752219650d56e826c03ada278a&amp;source=constructor"
+            width="100%" height="400" frameborder="0"></iframe>
+    </div>
+</div>
+{% endblock content %}

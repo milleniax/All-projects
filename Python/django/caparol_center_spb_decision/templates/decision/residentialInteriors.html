@@ -1,0 +1,133 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+  Решения
+{% endblock title %}
+
+{% block content %}
+  
+
+<body>
+        <section>
+            <ul class="menu menu_interiors">
+                <li class="menu__item menu__item_kitchen">Кухня</li>
+                <li class="menu__item ">Комната</li>
+                <li class="menu__item ">Спальня</li>
+                <li class="menu__item ">Гостиная</li>
+                <li class="menu__item ">Балкон</li>
+            </ul>
+            <ul class="menu menu_kitchen">
+                <li class="menu__item menu__item_provanse">Прованс</li>
+                <li class="menu__item menu__item_loft">Лофт</li>
+                <li class="menu__item menu__item_highteck">Хай-Тек</li>
+                <li class="menu__item menu__item_minimal">Минимализм</li>
+                <li class="menu__item menu__item_scandal">Скандинавский</li>
+            </ul>
+        </section>
+
+        <main>
+            <div class="card-interiors card-interiors_provanse">
+                <div class="card-left"></div>
+                <div class="card-right">
+                    <div class="block block_top">
+                        <img src="{% static 'img/Block1.jpg' %}" alt="">
+                        <h4>Стены</h4>
+                        <p id="block1-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis aspernatur, tenetur temporibus eveniet dignissimos neque praesentium illo, libero veritatis vero quisquam repudiandae, esse illum. Tenetur magni maiores est velit
+                            beatae.
+                        </p>
+                        <p>От 25000р.</p>
+                    </div>
+                    <div class="block block_middle">
+                        <img src="{% static 'img/Block2.jpg' %}" alt="">
+                        <h4>Пол</h4>
+                    </div>
+                    <div class="block block_bottom">
+                        <img src="{% static 'img/Block3.jpg' %}" alt="">
+                        <h4>Потолок</h4>
+                    </div>
+                </div>
+            </div>
+            <!-- div class="card-interiors card-interiors_loft">
+                <div class="card-left"></div>
+                <div class="card-right">
+                    <div class="block block_top">
+                        <img src="" alt="">
+                        <h4></h4>
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="block block_middle">
+                        <img src="" alt="">
+                        <h4></h4>
+                    </div>
+                    <div class="block block_bottom">
+                        <img src="" alt="">
+                        <h4></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="card-interiors card-interiors_hitek">
+                <div class="card-left"></div>
+                <div class="card-right">
+                    <div class="block block_top">
+                        <img src="" alt="">
+                        <h4></h4>
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="block block_middle">
+                        <img src="" alt="">
+                        <h4></h4>
+                    </div>
+                    <div class="block block_bottom">
+                        <img src="" alt="">
+                        <h4></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="card-interiors card-interiors_minim">
+                <div class="card-left"></div>
+                <div class="card-right">
+                    <div class="block block_top">
+                        <img src="" alt="">
+                        <h4></h4>
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="block block_middle">
+                        <img src="" alt="">
+                        <h4></h4>
+                    </div>
+                    <div class="block block_bottom">
+                        <img src="" alt="">
+                        <h4></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="cacard-interiors card-interiors_scand">
+                <div class="card-left"></div>
+                <div class="card-right">
+                    <div class="block block_top">
+                        <img src="" alt="">
+                        <h4></h4>
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="block block_middle">
+                        <img src="" alt="">
+                        <h4></h4>
+                    </div>
+                    <div class="block block_bottom">
+                        <img src="" alt="">
+                        <h4></h4>
+                    </div>
+                </div>
+            </div> -->
+        </main>
+        <div class="wrapper-btn">
+            <button class="btn btn_apply">Оставить заявку</button>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+
+{% endblock content %}
